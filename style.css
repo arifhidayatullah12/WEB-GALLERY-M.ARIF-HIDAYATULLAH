@@ -1,0 +1,303 @@
+/* Reset margin dan padding default */
+* {
+    margin: 80;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gaya body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, 	#5F9EA0, 	#5F9EA0);
+    color: 	#00e1ff;
+    padding: 20px;
+}
+
+/* Gaya judul halaman dengan animasi */
+h1 {
+    text-align:right ;
+    margin-bottom: 20px;/* Reset margin dan padding default */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    /* Gaya body */
+    body {
+        font-family: 'Roboto', sans-serif;
+        background: linear-gradient(135deg, #2f00ff, #5F9EA0);
+        color: #ff0000;
+        padding: 20px;
+    }
+    
+    /* Gaya judul halaman dengan animasi */
+    h1 {
+        text-align:right ;
+        margin-bottom: 20px;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: rgb(255, 0, 0);
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        animation: slideInDown 1s ease;
+    }
+    
+    /* Animasi untuk judul halaman */
+    @keyframes slideInDown {
+        from {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    
+    /* Gaya navigasi */
+    ul {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        text-align:right;
+    }
+    
+    ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    ul li a {
+        text-decoration: none;
+        color: #0044ff;
+        padding: 10px 20px;
+        background: linear-gradient(135deg, 	#5F9EA0, 	#5F9EA0);
+        box-shadow: 2px 2px 4px rgba(142, 182, 235, 0.3);
+        transition: all 0.3s ease;
+    }
+    
+    ul li a:hover {
+        transform: translateY(-3px);
+        box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+    }
+    
+    /* Gaya tabel */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        background-color: #ff00d4;
+        animation: fadeIn 1s ease;
+        transition: all 0.3s ease;
+    }
+    
+    table th,
+    table td {
+        padding: 15px;
+        border: 1px solid #000000;
+    }
+    
+    table th {
+        background-color: #ff00d4;
+        text-align: right;
+    }
+    
+    table tr:nth-child(even) {
+        background-color: #ff00d4;
+    }
+    
+    /* Gaya formulir */
+    form {
+        margin-bottom: 20px;
+        animation: fadeIn 1s ease;
+        transition: all 0.3s ease;
+    }
+    
+    form table {
+        width: auto;
+        margin: 0 auto;
+    }
+    
+    form table td {
+        padding: 10px;
+    }
+    
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"],
+    form input[type="submit"],
+    form select {
+        width: 100%;
+        padding: 10px;
+        margin: 5px 0;
+        border: none;
+        background-color: #000000;
+        color: #333;
+    }
+    
+    form input[type="submit"] {
+        cursor: pointer;
+        background-color: #ff00d4;
+        color: #000000;
+        font-weight: bold;
+        transition: all 0.3s ease;
+    }
+    
+    form input[type="submit"]:hover {
+        background-color: #ff0000;
+    }
+    
+    /* Responsif */
+    @media (max-width: 768px) {
+        ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        ul li:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    /* Animasi untuk elemen masuk */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    animation: slideInDown 1s ease;
+}
+
+/* Animasi untuk judul halaman */
+@keyframes slideInDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Gaya navigasi */
+ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    text-align:right ;
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #00e1ff, 	#ff0000);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+
+ul li a:hover {
+    transform: translateY(-3px);
+    box-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+/* Gaya tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    background-color: #ff00d4;
+    animation: fadeIn 1s ease;
+}
+
+table th,
+table td {
+    padding: 15px;
+    background-color:#000000;
+    border: 1px solid ;
+}
+
+table th {
+    background-color: 	#808080;
+    text-align: right;
+}
+
+table tr:nth-child(even) {
+    background-color: #00FFFF;
+}
+
+/* Gaya formulir */
+form {
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease;
+}
+
+form table {
+    width: auto;
+    margin: 0 auto;
+}
+
+form table td {
+    padding: 10px;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"],
+form input[type="submit"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    background-color: #00FFFF;
+    background-color: 	#ffffff;
+}
+
+form input[type="submit"] {
+    cursor: pointer;
+    background-color: 		#FF0000;
+    color: #000000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: 	#ff0000;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    ul li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Animasi untuk elemen masuk */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
